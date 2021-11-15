@@ -3,7 +3,7 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Feed from '../screens/Feed'
 import CreatePost from '../screens/CreatePost'
-import { Platform } from 'react-native';
+import { Platform, StyleSheet } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { RFValue } from 'react-native-responsive-fontsize';
 
