@@ -1,13 +1,17 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, SafeAreaView, FlatList} from 'react-native';
-import PostCard from './PostCard';
-let posts = require("./temp_posts.json");
+import { StyleSheet, Text, View, Image, SafeAreaView, FlatList,Platform} from 'react-native';
+import PostCard from './PostCard'
+import { RFValue } from "react-native-responsive-fontsize";
+    let posts = require("./temp_posts.json");
 
+    
 export default class App extends React.Component {
-   constructor(props) {
-      super(props);
-      this.state = {};
-  }
+ constructor(props) {
+        super(props);
+        this.state = {};
+    }
+
+
    renderItem=({item:post}) =>{
       return(<PostCard post = {post}/>)
     }
